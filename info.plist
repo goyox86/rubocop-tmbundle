@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>tblbk86@tznvy.pbz</string>
+	<key>contactName</key>
+	<string>Jose Narvaez</string>
+	<key>description</key>
+	<string>Support for the &lt;a href="http://batsov.com/rubocop/"&gt;Rubocop&lt;/a&gt; experimental Ruby code analyzer.</string>
+	<key>name</key>
+	<string>Rubocop</string>
+	<key>uuid</key>
+	<string>629B0432-F697-475F-92C0-9423797DCFC7</string>
+</dict>
+</plist>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require ENV['TM_SUPPORT_PATH'] + '/lib/tm/executor'
+require ENV['TM_SUPPORT_PATH'] + '/lib/tm/save_current_document'
+
+options = {
+  :verb =&gt; 'Checking'
+}
+
+TextMate::Executor.make_project_master_current_document
+TextMate::Executor.run(ENV['TM_RUBOCOP'] || 'rubocop', ENV['TM_FILEPATH'], options)
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>~@c</string>
+	<key>name</key>
+	<string>Check Current File</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>106E8995-8EDD-4BAE-A745-648ED2A2BBB4</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
